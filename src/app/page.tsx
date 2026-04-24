@@ -17,7 +17,7 @@ export default function Home() {
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80")' }}
         >
-          <div className="absolute inset-0 bg-background/70 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-emerald-950/70 backdrop-blur-[2px]"></div>
           {/* Luxury Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </div>
@@ -233,7 +233,7 @@ export default function Home() {
             alt="Luxury Interior" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-background/80"></div>
+          <div className="absolute inset-0 bg-emerald-950/90"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-4 text-center">

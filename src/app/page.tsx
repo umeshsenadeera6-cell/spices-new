@@ -61,12 +61,12 @@ export default function Home() {
           style={{ perspective: 1000 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-5xl z-20"
         >
-          <div className="glass rounded-full p-4 flex flex-col md:flex-row gap-4">
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
+          <div className="glass rounded-full p-2.5 flex flex-col md:flex-row gap-2.5">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <MapPin className="text-primary h-5 w-5 mr-3" />
               <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-emerald-950 w-full placeholder:text-emerald-600/80 font-medium" />
             </div>
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <Building className="text-primary h-5 w-5 mr-3" />
               <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
                 <option value="" className="text-emerald-700">Property Type</option>
@@ -75,7 +75,7 @@ export default function Home() {
                 <option value="apartment" className="text-emerald-950">Apartment</option>
               </select>
             </div>
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <span className="text-primary font-bold mr-3">LKR</span>
               <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
                 <option value="" className="text-emerald-700">Price Range</option>
@@ -84,8 +84,8 @@ export default function Home() {
                 <option value="100m+" className="text-emerald-950">100M+</option>
               </select>
             </div>
-            <button className="bg-primary text-white p-4 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5">
-              <Search className="h-5 w-5" />
+            <button className="bg-primary text-white w-[54px] h-[54px] flex items-center justify-center rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5">
+              <Search className="h-6 w-6" />
             </button>
           </div>
         </motion.div>

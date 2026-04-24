@@ -37,19 +37,6 @@ export default function Home() {
             Premium property development, land sales, and exclusive real estate investment opportunities in Sri Lanka designed for maximum ROI.
           </motion.p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center"
-          >
-            <Link href="/properties" className="btn-primary">
-              View Properties <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
-              Book a Consultation
-            </Link>
-          </motion.div>
         </div>
 
         {/* Floating Search Bar */}

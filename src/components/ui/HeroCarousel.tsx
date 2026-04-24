@@ -38,19 +38,6 @@ export default function HeroCarousel() {
       <div className="absolute inset-0 bg-emerald-950/60 backdrop-blur-[2px]"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
       
-      {/* Carousel Indicators - Positioned above the search bar */}
-      <div className="absolute bottom-40 md:bottom-32 left-1/2 -translate-x-1/2 flex gap-3 z-10">
-        {images.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`h-2 rounded-full transition-all duration-500 shadow-sm ${
-              idx === currentIndex ? "bg-primary w-8" : "bg-white/40 hover:bg-white/80 w-2"
-            }`}
-            aria-label={`Go to slide ${idx + 1}`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

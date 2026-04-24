@@ -105,40 +105,42 @@ export default function Home() {
                 style={{ transformStyle: "preserve-3d", perspective: 1000 }}
                 className="glass-card group overflow-hidden cursor-pointer"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                    {property.status}
-                  </div>
-                  <img 
-                    src={property.images ? property.images[0] : property.imageUrl} 
-                    alt={property.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h4 className="text-xl font-bold text-emerald-950 mb-1 group-hover:text-primary transition-colors">{property.title}</h4>
-                      <p className="text-emerald-800 text-sm flex items-center gap-1">
-                        <MapPin className="h-3 w-3" /> {property.location}
-                      </p>
+                <Link href={`/properties/${property.id}`}>
+                  <div className="relative h-64 overflow-hidden">
+                    <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                      {property.status}
                     </div>
-                    <div className="text-right">
-                      <p className="text-primary font-bold">{property.price}</p>
+                    <img 
+                      src={property.images ? property.images[0] : property.imageUrl} 
+                      alt={property.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <div>
+                        <h4 className="text-xl font-bold text-emerald-950 mb-1 group-hover:text-primary transition-colors">{property.title}</h4>
+                        <p className="text-emerald-800 text-sm flex items-center gap-1">
+                          <MapPin className="h-3 w-3" /> {property.location}
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-primary font-bold">{property.price}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4 border-t border-gray-200 pt-4 mt-4 text-sm text-emerald-800">
+                      {property.bedrooms > 0 && (
+                        <span>{property.bedrooms} Beds</span>
+                      )}
+                      {property.bathrooms > 0 && (
+                        <span>{property.bathrooms} Baths</span>
+                      )}
+                      <span>{property.size}</span>
                     </div>
                   </div>
-                  
-                  <div className="flex gap-4 border-t border-gray-200 pt-4 mt-4 text-sm text-emerald-800">
-                    {property.bedrooms > 0 && (
-                      <span>{property.bedrooms} Beds</span>
-                    )}
-                    {property.bathrooms > 0 && (
-                      <span>{property.bathrooms} Baths</span>
-                    )}
-                    <span>{property.size}</span>
-                  </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>

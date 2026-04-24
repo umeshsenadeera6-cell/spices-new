@@ -104,6 +104,11 @@ export default function PropertiesPage() {
                     <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                       {property.status}
                     </div>
+                    <img 
+                      src={property.images ? property.images[0] : property.imageUrl} 
+                      alt={property.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
                   </div>
                   <div className="p-6">

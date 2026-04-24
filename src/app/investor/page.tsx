@@ -57,11 +57,13 @@ export default function InvestorPage() {
           ].map((benefit, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="glass p-8 rounded-2xl hover:bg-gray-100 transition-colors"
+              initial={{ opacity: 0, y: 50, rotateY: -15, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, rotateY: 0, scale: 1 }}
+              whileHover={{ scale: 1.05, rotateY: 5, rotateX: 5, z: 20 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1, type: "spring" }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
+              className="glass p-8 rounded-2xl hover:bg-white/60 transition-colors"
             >
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <benefit.icon className="h-7 w-7 text-primary" />
@@ -73,10 +75,12 @@ export default function InvestorPage() {
 
           {/* Calculator CTA - Optional UI feature requested */}
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+            initial={{ opacity: 0, y: 50, rotateX: 15 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+            whileHover={{ scale: 1.02, rotateX: -5, z: 10 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.5, type: "spring" }}
+            style={{ transformStyle: "preserve-3d", perspective: 1000 }}
             className="glass-card p-8 rounded-2xl flex flex-col justify-center items-center text-center bg-gradient-to-br from-navy-light/80 to-primary/20 border-primary/30"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-3">ROI Calculator</h3>

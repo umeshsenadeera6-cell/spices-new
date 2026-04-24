@@ -92,9 +92,11 @@ export default function PropertiesPage() {
             filteredProperties.map((property, idx) => (
               <motion.div 
                 key={property.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+                whileHover={{ y: -10, rotateX: 5, rotateY: -5, z: 20, scale: 1.02 }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                style={{ transformStyle: "preserve-3d", perspective: 1000 }}
                 className="glass-card group overflow-hidden"
               >
                 <Link href={`/properties/${property.id}`}>

@@ -24,9 +24,10 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto px-4 text-center">
           <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 50, rotateX: -30, z: -100 }}
+            animate={{ opacity: 1, y: 0, rotateX: 0, z: 0 }}
+            transition={{ duration: 1, type: "spring", bounce: 0.4 }}
+            style={{ perspective: 1000 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Invest Smart. <br className="hidden md:block"/>
@@ -60,9 +61,11 @@ export default function Home() {
 
         {/* Floating Search Bar */}
         <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          initial={{ opacity: 0, y: 80, rotateX: 20 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          whileHover={{ y: -5, scale: 1.01, rotateX: 2 }}
+          transition={{ duration: 0.8, delay: 0.6, type: "spring" }}
+          style={{ perspective: 1000 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-5xl z-20"
         >
           <div className="glass rounded-full p-4 flex flex-col md:flex-row gap-4">
@@ -114,10 +117,12 @@ export default function Home() {
             {featuredProperties.map((property, idx) => (
               <motion.div 
                 key={property.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+                whileHover={{ y: -10, rotateX: 5, rotateY: -5, z: 20, scale: 1.02 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                style={{ transformStyle: "preserve-3d", perspective: 1000 }}
                 className="glass-card group overflow-hidden cursor-pointer"
               >
                 <div className="relative h-64 overflow-hidden">
@@ -170,9 +175,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.8, rotateY: 30 }}
+              whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+              whileHover={{ scale: 1.05, rotateY: 10, z: 30 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, type: "spring" }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass-card p-10 text-center"
             >
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
@@ -183,10 +191,12 @@ export default function Home() {
             </motion.div>
 
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
+              initial={{ opacity: 0, scale: 0.8, rotateY: 30 }}
+              whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+              whileHover={{ scale: 1.05, rotateY: 10, z: 30 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.2, type: "spring" }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass-card p-10 text-center relative overflow-hidden"
             >
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
@@ -197,10 +207,12 @@ export default function Home() {
             </motion.div>
 
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
+              initial={{ opacity: 0, scale: 0.8, rotateY: 30 }}
+              whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+              whileHover={{ scale: 1.05, rotateY: 10, z: 30 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.4, type: "spring" }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass-card p-10 text-center"
             >
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">

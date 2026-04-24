@@ -32,9 +32,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 0, x: -50, rotateY: 15 }}
+            animate={{ opacity: 1, x: 0, rotateY: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+            style={{ transformStyle: "preserve-3d", perspective: 1000 }}
             className="space-y-8"
           >
             <div className="glass p-8 rounded-3xl">
@@ -95,9 +96,10 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
+            initial={{ opacity: 0, x: 50, rotateY: -15 }}
+            animate={{ opacity: 1, x: 0, rotateY: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
+            style={{ transformStyle: "preserve-3d", perspective: 1000 }}
           >
             <div className="glass-card p-8 md:p-10 rounded-3xl h-full">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>

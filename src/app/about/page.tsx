@@ -41,9 +41,12 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -50, rotateY: 15 }}
+              whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+              whileHover={{ scale: 1.02, rotateY: 5, z: 20 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, type: "spring" }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass p-10 rounded-3xl relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10" />
@@ -55,9 +58,12 @@ export default function AboutPage() {
             </motion.div>
 
             <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, x: 50, rotateY: -15 }}
+              whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+              whileHover={{ scale: 1.02, rotateY: -5, z: 20 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, type: "spring", delay: 0.2 }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass p-10 rounded-3xl relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10" />
@@ -89,10 +95,12 @@ export default function AboutPage() {
           ].map((member, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
+              whileHover={{ y: -10, rotateX: 5, rotateY: -5, z: 20, scale: 1.02 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
               className="glass-card overflow-hidden text-center group"
             >
               <div className="h-80 overflow-hidden">

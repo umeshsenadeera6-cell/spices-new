@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #D4AF37; /* Gold */
+  --color-primary-dark: #B5952F;
+  --color-navy: #0A1128;
+  --color-navy-light: #1C2B4B;
+  --font-sans: var(--font-poppins);
+}
+
+:root {
+  --background: #050814; /* Deep dark blue/black */
+  --foreground: #F5F5F5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .glass-card {
+    @apply bg-navy-light/40 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl transition-all duration-300 hover:border-primary/50 hover:bg-navy-light/60;
+  }
+  
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-yellow-200;
+  }
+}

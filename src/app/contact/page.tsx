@@ -15,7 +15,7 @@ export default function ContactPage() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
           >
             Get in <span className="text-primary">Touch</span>
           </motion.h1>
@@ -23,7 +23,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-gray-600 max-w-2xl mx-auto"
+            className="text-xl text-emerald-800 max-w-2xl mx-auto"
           >
             Ready to secure your next investment? Our expert advisors are here to guide you through every step.
           </motion.p>
@@ -39,15 +39,15 @@ export default function ContactPage() {
             className="space-y-8"
           >
             <div className="glass p-8 rounded-3xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-emerald-950 mb-8">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center shrink-0">
                     <MapPin className="text-primary h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-900 font-semibold mb-1">Head Office</h4>
-                    <p className="text-gray-600 leading-relaxed">
+                    <h4 className="text-emerald-950 font-semibold mb-1">Head Office</h4>
+                    <p className="text-emerald-800 leading-relaxed">
                       Level 35, World Trade Center,<br/>
                       Echelon Square, Colombo 01,<br/>
                       Sri Lanka
@@ -60,9 +60,9 @@ export default function ContactPage() {
                     <Phone className="text-primary h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-900 font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-600">Main: +94 11 234 5678</p>
-                    <p className="text-gray-600">Sales: +94 77 123 4567</p>
+                    <h4 className="text-emerald-950 font-semibold mb-1">Phone</h4>
+                    <p className="text-emerald-800">Main: +94 11 234 5678</p>
+                    <p className="text-emerald-800">Sales: +94 77 123 4567</p>
                   </div>
                 </div>
 
@@ -71,9 +71,9 @@ export default function ContactPage() {
                     <Mail className="text-primary h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-900 font-semibold mb-1">Email</h4>
-                    <p className="text-gray-600">invest@serendib.lk</p>
-                    <p className="text-gray-600">support@serendib.lk</p>
+                    <h4 className="text-emerald-950 font-semibold mb-1">Email</h4>
+                    <p className="text-emerald-800">invest@serendib.lk</p>
+                    <p className="text-emerald-800">support@serendib.lk</p>
                   </div>
                 </div>
               </div>
@@ -81,10 +81,10 @@ export default function ContactPage() {
 
             {/* Map Placeholder */}
             <div className="h-64 rounded-3xl overflow-hidden glass relative">
-              <div className="absolute inset-0 bg-white text-gray-900/80 flex flex-col items-center justify-center z-10 text-center px-4">
+              <div className="absolute inset-0 bg-white text-emerald-950/80 flex flex-col items-center justify-center z-10 text-center px-4">
                 <MapPin className="text-primary h-8 w-8 mb-2" />
-                <p className="text-gray-900 font-semibold">Google Maps Integration</p>
-                <p className="text-sm text-gray-600">Requires API Key</p>
+                <p className="text-emerald-950 font-semibold">Google Maps Integration</p>
+                <p className="text-sm text-emerald-800">Requires API Key</p>
               </div>
               <img 
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80" 
@@ -102,59 +102,59 @@ export default function ContactPage() {
             style={{ transformStyle: "preserve-3d", perspective: 1000 }}
           >
             <div className="glass-card p-8 md:p-10 rounded-3xl h-full">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+              <h3 className="text-2xl font-bold text-emerald-950 mb-6">Send us a Message</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-emerald-800 mb-2">First Name</label>
                     <input 
                       type="text" 
-                      className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-gray-900 focus:outline-none focus:border-primary transition-colors"
+                      className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                       placeholder="John"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-emerald-800 mb-2">Last Name</label>
                     <input 
                       type="text" 
-                      className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-gray-900 focus:outline-none focus:border-primary transition-colors"
+                      className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                       placeholder="Doe"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
+                  <label className="block text-sm font-medium text-emerald-800 mb-2">Email Address</label>
                   <input 
                     type="email" 
-                    className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-gray-900 focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-2">Subject</label>
-                  <select className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-gray-900 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer">
-                    <option value="" className="bg-white text-gray-900">Select an inquiry type</option>
-                    <option value="buy" className="bg-white text-gray-900">Buying Property</option>
-                    <option value="invest" className="bg-white text-gray-900">Investment Consultation</option>
-                    <option value="sell" className="bg-white text-gray-900">Selling Property</option>
-                    <option value="other" className="bg-white text-gray-900">Other</option>
+                  <label className="block text-sm font-medium text-emerald-800 mb-2">Subject</label>
+                  <select className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer">
+                    <option value="" className="bg-white text-emerald-950">Select an inquiry type</option>
+                    <option value="buy" className="bg-white text-emerald-950">Buying Property</option>
+                    <option value="invest" className="bg-white text-emerald-950">Investment Consultation</option>
+                    <option value="sell" className="bg-white text-emerald-950">Selling Property</option>
+                    <option value="other" className="bg-white text-emerald-950">Other</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-emerald-800 mb-2">Message</label>
                   <textarea 
                     rows={5}
-                    className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-gray-900 focus:outline-none focus:border-primary transition-colors resize-none"
+                    className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors resize-none"
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
 
                 <button 
                   type="button" 
-                  className="w-full py-4 bg-primary text-gray-900 font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30 flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-primary text-emerald-950 font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30 flex items-center justify-center gap-2"
                 >
                   Send Message <Send className="h-4 w-4" />
                 </button>

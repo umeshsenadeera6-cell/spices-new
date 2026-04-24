@@ -11,7 +11,7 @@ export default function InvestorPage() {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+          className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
         >
           Invest in <span className="text-primary">Sri Lanka</span>
         </motion.h1>
@@ -19,7 +19,7 @@ export default function InvestorPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-xl text-gray-600 max-w-3xl mx-auto"
+          className="text-xl text-emerald-800 max-w-3xl mx-auto"
         >
           Sri Lanka is emerging as one of the most lucrative real estate markets in South Asia. Partner with Serendib to secure high-yield assets in strategic development zones.
         </motion.p>
@@ -68,8 +68,8 @@ export default function InvestorPage() {
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <benefit.icon className="h-7 w-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{benefit.desc}</p>
+              <h3 className="text-xl font-bold text-emerald-950 mb-3">{benefit.title}</h3>
+              <p className="text-emerald-800 leading-relaxed">{benefit.desc}</p>
             </motion.div>
           ))}
 
@@ -83,9 +83,9 @@ export default function InvestorPage() {
             style={{ transformStyle: "preserve-3d", perspective: 1000 }}
             className="glass-card p-8 rounded-2xl flex flex-col justify-center items-center text-center bg-gradient-to-br from-navy-light/80 to-primary/20 border-primary/30"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">ROI Calculator</h3>
-            <p className="text-gray-600 mb-6">Estimate your potential returns based on current market data.</p>
-            <button className="px-6 py-3 bg-primary text-gray-900 font-bold rounded-full w-full shadow-lg shadow-primary/30">
+            <h3 className="text-2xl font-bold text-emerald-950 mb-3">ROI Calculator</h3>
+            <p className="text-emerald-800 mb-6">Estimate your potential returns based on current market data.</p>
+            <button className="px-6 py-3 bg-primary text-emerald-950 font-bold rounded-full w-full shadow-lg shadow-primary/30">
               Launch Calculator
             </button>
           </motion.div>
@@ -96,8 +96,8 @@ export default function InvestorPage() {
       <section className="bg-white py-20 border-y border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Investor Resources</h2>
-            <p className="text-gray-600">Download our latest market reports and project brochures.</p>
+            <h2 className="text-3xl font-bold text-emerald-950 mb-4">Investor Resources</h2>
+            <p className="text-emerald-800">Download our latest market reports and project brochures.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -107,11 +107,11 @@ export default function InvestorPage() {
                   <Download className="text-primary h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold group-hover:text-primary transition-colors">Market Report Q3 2026</h4>
-                  <p className="text-gray-600 text-sm">PDF • 4.2 MB</p>
+                  <h4 className="text-emerald-950 font-bold group-hover:text-primary transition-colors">Market Report Q3 2026</h4>
+                  <p className="text-emerald-800 text-sm">PDF • 4.2 MB</p>
                 </div>
               </div>
-              <button className="text-gray-600 hover:text-gray-900 transition-colors">
+              <button className="text-emerald-800 hover:text-emerald-950 transition-colors">
                 Download
               </button>
             </div>
@@ -122,11 +122,11 @@ export default function InvestorPage() {
                   <Download className="text-primary h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold group-hover:text-primary transition-colors">Luxury Projects Brochure</h4>
-                  <p className="text-gray-600 text-sm">PDF • 8.5 MB</p>
+                  <h4 className="text-emerald-950 font-bold group-hover:text-primary transition-colors">Luxury Projects Brochure</h4>
+                  <p className="text-emerald-800 text-sm">PDF • 8.5 MB</p>
                 </div>
               </div>
-              <button className="text-gray-600 hover:text-gray-900 transition-colors">
+              <button className="text-emerald-800 hover:text-emerald-950 transition-colors">
                 Download
               </button>
             </div>

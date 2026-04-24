@@ -20,7 +20,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
           >
             Shaping the Future of <span className="text-primary">Sri Lankan Real Estate</span>
           </motion.h1>
@@ -28,7 +28,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-gray-600 leading-relaxed"
+            className="text-xl text-emerald-800 leading-relaxed"
           >
             Serendib Investment & Developers is a premier real estate firm dedicated to transforming the property landscape of Sri Lanka. We specialize in luxury residential developments, prime commercial lands, and high-yield investment properties.
           </motion.p>
@@ -51,8 +51,8 @@ export default function AboutPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10" />
               <Eye className="h-12 w-12 text-primary mb-6" />
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <h3 className="text-3xl font-bold text-emerald-950 mb-4">Our Vision</h3>
+              <p className="text-emerald-800 text-lg leading-relaxed">
                 To be the most trusted and innovative real estate developer in South Asia, setting global standards in luxury, sustainability, and investment value.
               </p>
             </motion.div>
@@ -68,8 +68,8 @@ export default function AboutPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10" />
               <Target className="h-12 w-12 text-primary mb-6" />
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <h3 className="text-3xl font-bold text-emerald-950 mb-4">Our Mission</h3>
+              <p className="text-emerald-800 text-lg leading-relaxed">
                 To deliver exceptional property solutions that maximize ROI for our investors while creating sustainable, state-of-the-art living and commercial spaces.
               </p>
             </motion.div>
@@ -81,8 +81,8 @@ export default function AboutPage() {
       <section className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Leadership Team</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-emerald-950 mb-4">Leadership Team</h2>
+          <p className="text-emerald-800 max-w-2xl mx-auto">
             Guided by industry veterans with decades of combined experience in real estate development and global investment strategies.
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h4>
+                <h4 className="text-xl font-bold text-emerald-950 mb-1">{member.name}</h4>
                 <p className="text-primary font-medium">{member.role}</p>
               </div>
             </motion.div>

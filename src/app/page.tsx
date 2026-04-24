@@ -71,24 +71,24 @@ export default function Home() {
           <div className="glass rounded-full p-4 flex flex-col md:flex-row gap-4">
             <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <MapPin className="text-primary h-5 w-5 mr-3" />
-              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-gray-900 w-full placeholder:text-gray-400 font-medium" />
+              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-emerald-950 w-full placeholder:text-emerald-600/80 font-medium" />
             </div>
             <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <Building className="text-primary h-5 w-5 mr-3" />
-              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer font-medium">
-                <option value="" className="text-gray-500">Property Type</option>
-                <option value="land" className="text-gray-900">Land</option>
-                <option value="house" className="text-gray-900">House</option>
-                <option value="apartment" className="text-gray-900">Apartment</option>
+              <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
+                <option value="" className="text-emerald-700">Property Type</option>
+                <option value="land" className="text-emerald-950">Land</option>
+                <option value="house" className="text-emerald-950">House</option>
+                <option value="apartment" className="text-emerald-950">Apartment</option>
               </select>
             </div>
             <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <span className="text-primary font-bold mr-3">LKR</span>
-              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer font-medium">
-                <option value="" className="text-gray-500">Price Range</option>
-                <option value="0-50m" className="text-gray-900">Under 50M</option>
-                <option value="50m-100m" className="text-gray-900">50M - 100M</option>
-                <option value="100m+" className="text-gray-900">100M+</option>
+              <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
+                <option value="" className="text-emerald-700">Price Range</option>
+                <option value="0-50m" className="text-emerald-950">Under 50M</option>
+                <option value="50m-100m" className="text-emerald-950">50M - 100M</option>
+                <option value="100m+" className="text-emerald-950">100M+</option>
               </select>
             </div>
             <button className="bg-primary text-white p-4 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5">
@@ -106,9 +106,9 @@ export default function Home() {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-2">Exclusive Portfolio</h2>
-              <h3 className="text-3xl md:text-5xl font-bold text-gray-900">Featured Properties</h3>
+              <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Featured Properties</h3>
             </div>
-            <Link href="/properties" className="hidden md:flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+            <Link href="/properties" className="hidden md:flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors">
               View All <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 className="glass-card group overflow-hidden cursor-pointer"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <div className="absolute top-4 left-4 z-10 bg-primary text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     {property.status}
                   </div>
                   <img 
@@ -139,8 +139,8 @@ export default function Home() {
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">{property.title}</h4>
-                      <p className="text-gray-600 text-sm flex items-center gap-1">
+                      <h4 className="text-xl font-bold text-emerald-950 mb-1 group-hover:text-primary transition-colors">{property.title}</h4>
+                      <p className="text-emerald-800 text-sm flex items-center gap-1">
                         <MapPin className="h-3 w-3" /> {property.location}
                       </p>
                     </div>
@@ -149,7 +149,7 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="flex gap-4 border-t border-gray-200 pt-4 mt-4 text-sm text-gray-600">
+                  <div className="flex gap-4 border-t border-gray-200 pt-4 mt-4 text-sm text-emerald-800">
                     {property.bedrooms > 0 && (
                       <span>{property.bedrooms} Beds</span>
                     )}
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-2">The Serendib Advantage</h2>
-            <h3 className="text-3xl md:text-5xl font-bold text-gray-900">Why Choose Us</h3>
+            <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Why Choose Us</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -186,8 +186,8 @@ export default function Home() {
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <Shield className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Trust & Transparency</h4>
-              <p className="text-gray-600 leading-relaxed">100% clear deeds, legally vetted properties, and complete transparency in every transaction.</p>
+              <h4 className="text-2xl font-bold text-emerald-950 mb-4">Trust & Transparency</h4>
+              <p className="text-emerald-800 leading-relaxed">100% clear deeds, legally vetted properties, and complete transparency in every transaction.</p>
             </motion.div>
 
             <motion.div 
@@ -202,8 +202,8 @@ export default function Home() {
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <TrendingUp className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">High ROI Potential</h4>
-              <p className="text-gray-600 leading-relaxed">Strategically selected locations in rapid development zones ensuring maximum return on your investment.</p>
+              <h4 className="text-2xl font-bold text-emerald-950 mb-4">High ROI Potential</h4>
+              <p className="text-emerald-800 leading-relaxed">Strategically selected locations in rapid development zones ensuring maximum return on your investment.</p>
             </motion.div>
 
             <motion.div 
@@ -218,8 +218,8 @@ export default function Home() {
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <Award className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Premium Experience</h4>
-              <p className="text-gray-600 leading-relaxed">From luxury villas to smart apartments, we deliver world-class infrastructure and modern amenities.</p>
+              <h4 className="text-2xl font-bold text-emerald-950 mb-4">Premium Experience</h4>
+              <p className="text-emerald-800 leading-relaxed">From luxury villas to smart apartments, we deliver world-class infrastructure and modern amenities.</p>
             </motion.div>
           </div>
         </div>

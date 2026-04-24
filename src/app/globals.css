@@ -7,12 +7,12 @@
   --color-primary-dark: #059669;
   --color-navy: #f3f4f6; /* Reusing the navy name for light gray backgrounds */
   --color-navy-light: #e5e7eb; 
-  --font-sans: var(--font-poppins);
+  --font-sans: var(--font-outfit);
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #111827; /* Gray-900 */
+  --foreground: #022c22; /* Emerald-950 */
 }
 
 body {

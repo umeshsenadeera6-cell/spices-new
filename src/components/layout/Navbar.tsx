@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 z-50">
           <Building2 className="text-primary h-8 w-8" />
-          <span className="text-xl font-bold tracking-wider text-gray-900">
+          <span className="text-xl font-bold tracking-wider text-emerald-950">
             SERENDIB
             <span className="block text-[10px] text-primary tracking-widest uppercase">
               Investment & Developers
@@ -54,7 +54,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.path}
                 className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                  isActive ? "text-primary" : "text-gray-600"
+                  isActive ? "text-primary" : "text-emerald-800"
                 }`}
               >
                 {link.name}
@@ -78,7 +78,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden z-50 text-gray-900"
+          className="md:hidden z-50 text-emerald-950"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -98,7 +98,7 @@ export default function Navbar() {
                 href={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`text-2xl font-medium ${
-                  pathname === link.path ? "text-primary" : "text-gray-900"
+                  pathname === link.path ? "text-primary" : "text-emerald-950"
                 }`}
               >
                 {link.name}

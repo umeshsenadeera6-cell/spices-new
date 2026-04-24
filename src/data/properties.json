@@ -8,11 +8,22 @@
     "size": "4,500 sq ft",
     "bedrooms": 5,
     "bathrooms": 4,
-    "features": ["Private Pool", "Ocean View", "Smart Home", "24/7 Security"],
+    "features": [
+      "Private Pool",
+      "Ocean View",
+      "Smart Home",
+      "24/7 Security"
+    ],
     "description": "Experience unparalleled luxury with this modern oceanfront villa located in the prestigious area of Negombo. Perfect for investors looking for high ROI vacation rentals or a luxurious family getaway.",
     "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
     "featured": true,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-002",
@@ -23,11 +34,22 @@
     "size": "2,100 sq ft",
     "bedrooms": 3,
     "bathrooms": 3,
-    "features": ["Gym Access", "Rooftop Pool", "City View", "Concierge"],
+    "features": [
+      "Gym Access",
+      "Rooftop Pool",
+      "City View",
+      "Concierge"
+    ],
     "description": "A premium high-rise apartment in the heart of Colombo, offering breathtaking skyline views, world-class amenities, and immediate access to the city's best shopping and dining.",
     "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     "featured": true,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-003",
@@ -38,11 +60,22 @@
     "size": "3,200 sq ft",
     "bedrooms": 4,
     "bathrooms": 3,
-    "features": ["Mountain View", "Large Garden", "Eco-Friendly", "Quiet Neighborhood"],
+    "features": [
+      "Mountain View",
+      "Large Garden",
+      "Eco-Friendly",
+      "Quiet Neighborhood"
+    ],
     "description": "Nestled in the serene hills of Kandy, this beautiful estate provides a peaceful retreat away from the city hustle. Features extensive gardens and panoramic mountain views.",
     "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
     "featured": true,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-004",
@@ -53,11 +86,22 @@
     "size": "40 Perches",
     "bedrooms": 0,
     "bathrooms": 0,
-    "features": ["Main Road Access", "Tourism Zone", "High ROI Potential", "Clear Deeds"],
+    "features": [
+      "Main Road Access",
+      "Tourism Zone",
+      "High ROI Potential",
+      "Clear Deeds"
+    ],
     "description": "An excellent investment opportunity in the popular tourist destination of Galle. Ideal for building a boutique hotel, commercial complex, or luxury villas.",
     "imageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-005",
@@ -68,11 +112,22 @@
     "size": "2,800 sq ft",
     "bedrooms": 4,
     "bathrooms": 4,
-    "features": ["Smart Integration", "Premium Location", "Infinity Pool", "Clubhouse"],
+    "features": [
+      "Smart Integration",
+      "Premium Location",
+      "Infinity Pool",
+      "Clubhouse"
+    ],
     "description": "Next-generation smart apartments situated in the most exclusive neighborhood in Colombo. Experience the pinnacle of modern urban living with cutting-edge technology integrated throughout.",
     "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Pre-Sale"
+    "status": "Pre-Sale",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-006",
@@ -83,11 +138,22 @@
     "size": "20 Perches",
     "bedrooms": 0,
     "bathrooms": 0,
-    "features": ["Lakefront", "Boat Access", "Residential Area", "Scenic Views"],
+    "features": [
+      "Lakefront",
+      "Boat Access",
+      "Residential Area",
+      "Scenic Views"
+    ],
     "description": "Build your dream home on this tranquil lakefront property in Bolgoda. Perfect for water sports enthusiasts and those seeking a quiet suburban lifestyle just outside Colombo.",
     "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-007",
@@ -98,11 +164,22 @@
     "size": "3,500 sq ft",
     "bedrooms": 4,
     "bathrooms": 3,
-    "features": ["UNESCO Heritage Site", "Antique Finishes", "Courtyard", "High Ceilings"],
+    "features": [
+      "UNESCO Heritage Site",
+      "Antique Finishes",
+      "Courtyard",
+      "High Ceilings"
+    ],
     "description": "A beautifully restored heritage home located inside the historic Galle Fort. This property seamlessly blends colonial charm with modern comforts.",
     "imageUrl": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
     "featured": true,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-008",
@@ -113,11 +190,22 @@
     "size": "1,800 sq ft",
     "bedrooms": 3,
     "bathrooms": 2,
-    "features": ["Direct Beach Access", "Balcony", "Shared Gym", "Ocean Views"],
+    "features": [
+      "Direct Beach Access",
+      "Balcony",
+      "Shared Gym",
+      "Ocean Views"
+    ],
     "description": "Wake up to the sound of waves in this luxurious beachfront apartment in Mount Lavinia. Features spacious living areas and a private balcony overlooking the Indian Ocean.",
     "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Sold"
+    "status": "Sold",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-009",
@@ -128,11 +216,21 @@
     "size": "100 Perches",
     "bedrooms": 0,
     "bathrooms": 0,
-    "features": ["Active Tea Plantation", "Cool Climate", "Development Potential"],
+    "features": [
+      "Active Tea Plantation",
+      "Cool Climate",
+      "Development Potential"
+    ],
     "description": "A lush 100-perch tea estate land in the cool hills of Kandy. A perfect location to build an eco-resort or maintain as a private retreat and active plantation.",
     "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-010",
@@ -143,11 +241,22 @@
     "size": "4,000 sq ft",
     "bedrooms": 4,
     "bathrooms": 4,
-    "features": ["Lagoon Front", "Private Dock", "Large Deck", "Tropical Garden"],
+    "features": [
+      "Lagoon Front",
+      "Private Dock",
+      "Large Deck",
+      "Tropical Garden"
+    ],
     "description": "An exquisite lagoon-front villa offering absolute privacy and serene water views. Ideal for entertaining with its expansive deck and seamless indoor-outdoor living.",
     "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-011",
@@ -158,11 +267,22 @@
     "size": "5,000 sq ft",
     "bedrooms": 5,
     "bathrooms": 4,
-    "features": ["Two Stories", "Maid's Quarters", "Double Garage", "Central Location"],
+    "features": [
+      "Two Stories",
+      "Maid's Quarters",
+      "Double Garage",
+      "Central Location"
+    ],
     "description": "A spacious, architect-designed family home in the highly sought-after residential area of Colombo 05. Close to top international schools and amenities.",
     "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
     "featured": true,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
     "id": "prop-012",
@@ -173,10 +293,21 @@
     "size": "4,200 sq ft",
     "bedrooms": 4,
     "bathrooms": 4,
-    "features": ["Infinity Pool", "Ocean Views", "Fully Furnished", "Gated Community"],
+    "features": [
+      "Infinity Pool",
+      "Ocean Views",
+      "Fully Furnished",
+      "Gated Community"
+    ],
     "description": "A spectacular modern villa located on a hilltop in Galle, offering sweeping views of the ocean. Comes fully furnished with high-end designer pieces.",
     "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
     "featured": false,
-    "status": "Available"
+    "status": "Available",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687931-cebfad74cb45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 ]

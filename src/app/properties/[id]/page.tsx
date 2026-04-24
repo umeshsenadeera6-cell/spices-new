@@ -1,40 +1,96 @@
+"use client";
+
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, MapPin, Bed, Bath, Maximize, CheckCircle, Phone, Mail } from "lucide-react";
+import { useState, use } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowLeft, MapPin, Bed, Bath, Maximize, CheckCircle, Phone, Mail, ChevronLeft, ChevronRight } from "lucide-react";
 import propertiesData from "@/data/properties.json";
 
-export default async function PropertyDetails({
+export default function PropertyDetails({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const resolvedParams = await params;
+  const resolvedParams = use(params);
   const property = propertiesData.find((p) => p.id === resolvedParams.id);
+  const [activeImage, setActiveImage] = useState(0);
 
   if (!property) {
     notFound();
   }
 
+  const images = property.images || [property.imageUrl];
+
+  const nextImage = () => setActiveImage((prev) => (prev + 1) % images.length);
+  const prevImage = () => setActiveImage((prev) => (prev - 1 + images.length) % images.length);
+
   return (
     <div className="min-h-screen pt-32 pb-24">
       <div className="container mx-auto px-4">
-        <Link href="/properties" className="inline-flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors mb-8">
-          <ArrowLeft className="h-4 w-4" /> Back to Properties
+        <Link href="/properties" className="inline-flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors mb-8 group">
+          <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" /> Back to Properties
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Gallery placeholder */}
-            <div className="relative h-[50vh] rounded-3xl overflow-hidden glass">
-              <img 
-                src={property.imageUrl} 
-                alt={property.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider">
-                {property.status}
+            {/* Gallery */}
+            <div className="space-y-4">
+              <div className="relative h-[60vh] rounded-3xl overflow-hidden glass shadow-2xl group">
+                <AnimatePresence mode="wait">
+                  <motion.img 
+                    key={activeImage}
+                    src={images[activeImage]} 
+                    alt={property.title}
+                    initial={{ opacity: 0, scale: 1.1 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full h-full object-cover"
+                  />
+                </AnimatePresence>
+                
+                <div className="absolute top-4 left-4 z-10 bg-primary text-emerald-950 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider shadow-lg">
+                  {property.status}
+                </div>
+
+                {images.length > 1 && (
+                  <>
+                    <button 
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/40"
+                    >
+                      <ChevronLeft className="h-6 w-6" />
+                    </button>
+                    <button 
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/40"
+                    >
+                      <ChevronRight className="h-6 w-6" />
+                    </button>
+                  </>
+                )}
               </div>
+
+              {/* Thumbnails */}
+              {images.length > 1 && (
+                <div className="grid grid-cols-4 gap-4">
+                  {images.map((img, idx) => (
+                    <motion.button
+                      key={idx}
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setActiveImage(idx)}
+                      className={`relative h-24 rounded-2xl overflow-hidden glass transition-all ${
+                        activeImage === idx ? "ring-4 ring-primary ring-offset-4 ring-offset-background" : "opacity-60 hover:opacity-100"
+                      }`}
+                    >
+                      <img src={img} alt={`${property.title} ${idx + 1}`} className="w-full h-full object-cover" />
+                    </motion.button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Title & Info */}

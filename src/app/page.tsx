@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Search, MapPin, Building, Shield, TrendingUp, Award, Quote } from "lucide-react";
 import propertiesData from "@/data/properties.json";
+import HeroCarousel from "@/components/ui/HeroCarousel";
 
 export default function Home() {
   const featuredProperties = propertiesData.filter(p => p.featured);
@@ -12,15 +13,7 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video/Image Placeholder */}
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80")' }}
-        >
-          <div className="absolute inset-0 bg-emerald-950/70 backdrop-blur-[2px]"></div>
-          {/* Luxury Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-        </div>
+        <HeroCarousel />
 
         <div className="container relative z-10 mx-auto px-4 text-center">
           <motion.h1 

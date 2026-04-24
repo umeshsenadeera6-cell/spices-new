@@ -3,7 +3,7 @@ import { Building2, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-100 pt-16 pb-8 mt-20 relative overflow-hidden">
+    <footer className="bg-white border-t border-gray-100 pt-20 pb-10 mt-24 relative overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.02)]">
       {/* Decorative gradient blur */}
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />

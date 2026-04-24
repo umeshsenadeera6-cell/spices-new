@@ -70,7 +70,7 @@ export default function Navbar() {
           })}
           <Link
             href="/contact"
-            className="px-6 py-2 bg-primary text-gray-900 font-semibold rounded-full hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30"
+            className="btn-primary py-2.5 px-6 text-sm"
           >
             Consult Now
           </Link>
@@ -107,7 +107,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="px-8 py-3 bg-primary text-gray-900 font-bold rounded-full mt-4"
+              className="btn-primary w-full max-w-[200px] mt-4"
             >
               Consult Now
             </Link>

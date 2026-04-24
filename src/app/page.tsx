@@ -47,12 +47,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center"
           >
-            <Link href="/properties" className="px-8 py-4 bg-primary text-gray-900 font-bold rounded-full hover:bg-primary-dark transition-colors shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
+            <Link href="/properties" className="btn-primary">
               View Properties <ArrowRight className="h-5 w-5" />
             </Link>
-            <Link href="/contact" className="px-8 py-4 glass text-white font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors flex items-center justify-center">
+            <Link href="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
               Book a Consultation
             </Link>
           </motion.div>
@@ -66,29 +66,29 @@ export default function Home() {
           className="absolute bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-5xl z-20"
         >
           <div className="glass rounded-full p-4 flex flex-col md:flex-row gap-4">
-            <div className="flex-1 flex items-center bg-gray-100 rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 transition-colors">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <MapPin className="text-primary h-5 w-5 mr-3" />
-              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-gray-900 w-full placeholder:text-gray-600" />
+              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-gray-900 w-full placeholder:text-gray-400 font-medium" />
             </div>
-            <div className="flex-1 flex items-center bg-gray-100 rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 transition-colors">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <Building className="text-primary h-5 w-5 mr-3" />
-              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer">
-                <option value="" className="bg-white text-gray-900 text-gray-900">Property Type</option>
-                <option value="land" className="bg-white text-gray-900 text-gray-900">Land</option>
-                <option value="house" className="bg-white text-gray-900 text-gray-900">House</option>
-                <option value="apartment" className="bg-white text-gray-900 text-gray-900">Apartment</option>
+              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer font-medium">
+                <option value="" className="text-gray-500">Property Type</option>
+                <option value="land" className="text-gray-900">Land</option>
+                <option value="house" className="text-gray-900">House</option>
+                <option value="apartment" className="text-gray-900">Apartment</option>
               </select>
             </div>
-            <div className="flex-1 flex items-center bg-gray-100 rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 transition-colors">
+            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
               <span className="text-primary font-bold mr-3">LKR</span>
-              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer">
-                <option value="" className="bg-white text-gray-900 text-gray-900">Price Range</option>
-                <option value="0-50m" className="bg-white text-gray-900 text-gray-900">Under 50M</option>
-                <option value="50m-100m" className="bg-white text-gray-900 text-gray-900">50M - 100M</option>
-                <option value="100m+" className="bg-white text-gray-900 text-gray-900">100M+</option>
+              <select className="bg-transparent border-none outline-none text-gray-900 w-full appearance-none cursor-pointer font-medium">
+                <option value="" className="text-gray-500">Price Range</option>
+                <option value="0-50m" className="text-gray-900">Under 50M</option>
+                <option value="50m-100m" className="text-gray-900">50M - 100M</option>
+                <option value="100m+" className="text-gray-900">100M+</option>
               </select>
             </div>
-            <button className="bg-primary text-gray-900 p-4 rounded-full hover:bg-primary-dark transition-colors shrink-0">
+            <button className="bg-primary text-white p-4 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5">
               <Search className="h-5 w-5" />
             </button>
           </div>
@@ -173,13 +173,13 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="glass p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300"
+              className="glass-card p-10 text-center"
             >
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-                <Shield className="h-8 w-8 text-primary" />
+              <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <Shield className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Trust & Transparency</h4>
-              <p className="text-gray-600">100% clear deeds, legally vetted properties, and complete transparency in every transaction.</p>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Trust & Transparency</h4>
+              <p className="text-gray-600 leading-relaxed">100% clear deeds, legally vetted properties, and complete transparency in every transaction.</p>
             </motion.div>
 
             <motion.div 
@@ -187,14 +187,13 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="glass p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden"
+              className="glass-card p-10 text-center relative overflow-hidden"
             >
-              <div className="absolute inset-0 border-2 border-primary/20 rounded-2xl"></div>
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="h-8 w-8 text-primary" />
+              <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <TrendingUp className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4">High ROI Potential</h4>
-              <p className="text-gray-600">Strategically selected locations in rapid development zones ensuring maximum return on your investment.</p>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">High ROI Potential</h4>
+              <p className="text-gray-600 leading-relaxed">Strategically selected locations in rapid development zones ensuring maximum return on your investment.</p>
             </motion.div>
 
             <motion.div 
@@ -202,13 +201,13 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="glass p-8 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300"
+              className="glass-card p-10 text-center"
             >
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-                <Award className="h-8 w-8 text-primary" />
+              <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <Award className="h-10 w-10 text-primary" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Premium Experience</h4>
-              <p className="text-gray-600">From luxury villas to smart apartments, we deliver world-class infrastructure and modern amenities.</p>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Premium Experience</h4>
+              <p className="text-gray-600 leading-relaxed">From luxury villas to smart apartments, we deliver world-class infrastructure and modern amenities.</p>
             </motion.div>
           </div>
         </div>
@@ -236,7 +235,7 @@ export default function Home() {
             <p className="text-white mb-8 text-lg">
               Speak with our investment advisors to discover exclusive opportunities tailored to your financial goals.
             </p>
-            <Link href="/contact" className="inline-block px-10 py-4 bg-primary text-gray-900 font-bold rounded-full hover:bg-primary-dark transition-colors shadow-xl shadow-primary/30">
+            <Link href="/contact" className="btn-primary mx-auto inline-flex">
               Schedule a Strategy Session
             </Link>
           </motion.div>

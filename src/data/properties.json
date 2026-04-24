@@ -10,7 +10,7 @@
     "bathrooms": 4,
     "features": ["Private Pool", "Ocean View", "Smart Home", "24/7 Security"],
     "description": "Experience unparalleled luxury with this modern oceanfront villa located in the prestigious area of Negombo. Perfect for investors looking for high ROI vacation rentals or a luxurious family getaway.",
-    "imageUrl": "https://images.unsplash.com/photo-1613490908578-8318df283f60?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
     "featured": true,
     "status": "Available"
   },
@@ -130,7 +130,7 @@
     "bathrooms": 0,
     "features": ["Active Tea Plantation", "Cool Climate", "Development Potential"],
     "description": "A lush 100-perch tea estate land in the cool hills of Kandy. A perfect location to build an eco-resort or maintain as a private retreat and active plantation.",
-    "imageUrl": "https://images.unsplash.com/photo-1536691458269-8dbffeb1ab28?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
     "featured": false,
     "status": "Available"
   },
@@ -160,7 +160,7 @@
     "bathrooms": 4,
     "features": ["Two Stories", "Maid's Quarters", "Double Garage", "Central Location"],
     "description": "A spacious, architect-designed family home in the highly sought-after residential area of Colombo 05. Close to top international schools and amenities.",
-    "imageUrl": "https://images.unsplash.com/photo-1600607687931-cebf57159f81?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
     "featured": true,
     "status": "Available"
   },

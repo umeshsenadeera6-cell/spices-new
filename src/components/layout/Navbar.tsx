@@ -29,15 +29,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "glass-nav py-3" : "bg-transparent py-5"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 glass-nav ${
+        scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 z-50">
           <Building2 className="text-primary h-8 w-8" />
-          <span className="text-xl font-bold tracking-wider text-white">
+          <span className="text-xl font-bold tracking-wider text-gray-900">
             SERENDIB
             <span className="block text-[10px] text-primary tracking-widest uppercase">
               Investment & Developers
@@ -54,7 +54,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.path}
                 className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                  isActive ? "text-primary" : "text-gray-300"
+                  isActive ? "text-primary" : "text-gray-600"
                 }`}
               >
                 {link.name}
@@ -70,7 +70,7 @@ export default function Navbar() {
           })}
           <Link
             href="/contact"
-            className="px-6 py-2 bg-primary text-navy-light font-semibold rounded-full hover:bg-yellow-400 transition-colors shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+            className="px-6 py-2 bg-primary text-gray-900 font-semibold rounded-full hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30"
           >
             Consult Now
           </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden z-50 text-white"
+          className="md:hidden z-50 text-gray-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -98,7 +98,7 @@ export default function Navbar() {
                 href={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`text-2xl font-medium ${
-                  pathname === link.path ? "text-primary" : "text-white"
+                  pathname === link.path ? "text-primary" : "text-gray-900"
                 }`}
               >
                 {link.name}
@@ -107,7 +107,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="px-8 py-3 bg-primary text-navy-light font-bold rounded-full mt-4"
+              className="px-8 py-3 bg-primary text-gray-900 font-bold rounded-full mt-4"
             >
               Consult Now
             </Link>

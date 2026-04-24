@@ -3,16 +3,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: #D4AF37; /* Gold */
-  --color-primary-dark: #B5952F;
-  --color-navy: #0A1128;
-  --color-navy-light: #1C2B4B;
+  --color-primary: #10B981; /* Emerald Green */
+  --color-primary-dark: #059669;
+  --color-navy: #f3f4f6; /* Reusing the navy name for light gray backgrounds */
+  --color-navy-light: #e5e7eb; 
   --font-sans: var(--font-poppins);
 }
 
 :root {
-  --background: #050814; /* Deep dark blue/black */
-  --foreground: #F5F5F5;
+  --background: #ffffff;
+  --foreground: #111827; /* Gray-900 */
 }
 
 body {
@@ -25,18 +25,18 @@ body {
 /* Glassmorphism utilities */
 @layer utilities {
   .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+    @apply bg-white/80 backdrop-blur-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.05)];
   }
   
   .glass-card {
-    @apply bg-navy-light/40 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl transition-all duration-300 hover:border-primary/50 hover:bg-navy-light/60;
+    @apply bg-white/90 backdrop-blur-lg border border-gray-200 rounded-2xl shadow-lg transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:bg-gray-50/90;
   }
   
   .glass-nav {
-    @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
+    @apply bg-white/90 backdrop-blur-lg border-b border-gray-100 shadow-sm;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-yellow-200;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-green-300;
   }
 }

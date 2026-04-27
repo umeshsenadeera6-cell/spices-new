@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Menu, X, Building2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -35,14 +36,15 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 z-50">
-          <Building2 className="text-primary h-8 w-8" />
-          <span className="text-xl font-bold tracking-wider text-emerald-950">
-            SERENDIB
-            <span className="block text-[10px] text-primary tracking-widest uppercase">
-              Investment & Developers
-            </span>
-          </span>
+        <Link href="/" className="flex items-center z-50">
+          <Image
+            src="/logo.png"
+            alt="Serendib Investment & Developers"
+            width={160}
+            height={60}
+            className="h-14 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

@@ -5,9 +5,9 @@ import { Building2, Target, Eye, Users } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen pt-32 pb-16">
+    <div className="min-h-screen pt-24 md:pt-32 pb-12 md:pb-16">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 mb-16">
+      <section className="container mx-auto px-4 mb-10 md:mb-16">
         <div className="text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-emerald-950 mb-4"
+            className="text-3xl md:text-5xl font-bold text-emerald-950 mb-4"
           >
             Shaping the Future of <span className="text-primary">Sri Lankan Real Estate</span>
           </motion.h1>
@@ -28,7 +28,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-emerald-800 leading-relaxed"
+            className="text-base md:text-lg text-emerald-800 leading-relaxed"
           >
             Serendib Investment & Developers is a premier real estate firm dedicated to transforming the property landscape of Sri Lanka. We specialize in luxury residential developments, prime commercial lands, and high-yield investment properties.
           </motion.p>
@@ -36,7 +36,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="bg-gray-50 py-16 border-y border-gray-100 relative overflow-hidden mb-16">
+      <section className="bg-gray-50 py-10 md:py-16 border-y border-gray-100 relative overflow-hidden mb-10 md:mb-16">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -78,7 +78,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 pb-8">
         <div className="text-center mb-12">
           <Users className="h-10 w-10 text-primary mx-auto mb-3" />
           <h2 className="text-3xl md:text-4xl font-bold text-emerald-950 mb-3">Leadership Team</h2>

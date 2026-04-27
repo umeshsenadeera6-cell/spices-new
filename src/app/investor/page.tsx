@@ -5,13 +5,13 @@ import { TrendingUp, PieChart, Download, DollarSign, Globe, ShieldCheck } from "
 
 export default function InvestorPage() {
   return (
-    <div className="min-h-screen pt-44 pb-24">
+    <div className="min-h-screen pt-24 md:pt-44 pb-12 md:pb-24">
       {/* Header */}
-      <section className="container mx-auto px-4 mb-20 text-center">
+      <section className="container mx-auto px-4 mb-10 md:mb-20 text-center">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
+          className="text-3xl md:text-6xl font-bold text-emerald-950 mb-4 md:mb-6"
         >
           Invest in <span className="text-primary">Sri Lanka</span>
         </motion.h1>
@@ -19,15 +19,15 @@ export default function InvestorPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-xl text-emerald-800 max-w-3xl mx-auto"
+          className="text-base md:text-xl text-emerald-800 max-w-3xl mx-auto"
         >
           Sri Lanka is emerging as one of the most lucrative real estate markets in South Asia. Partner with Serendib to secure high-yield assets in strategic development zones.
         </motion.p>
       </section>
 
       {/* Benefits Grid */}
-      <section className="container mx-auto px-4 mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="container mx-auto px-4 mb-12 md:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {[
             {
               icon: TrendingUp,
@@ -63,7 +63,7 @@ export default function InvestorPage() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.1, type: "spring" }}
               style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-              className="glass p-8 rounded-2xl hover:bg-white/60 transition-colors"
+              className="glass p-6 md:p-8 rounded-2xl hover:bg-white/60 transition-colors"
             >
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <benefit.icon className="h-7 w-7 text-primary" />
@@ -93,7 +93,7 @@ export default function InvestorPage() {
       </section>
 
       {/* Downloads Section */}
-      <section className="bg-white py-20 border-y border-gray-100">
+      <section className="bg-white py-12 md:py-20 border-y border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-emerald-950 mb-4">Investor Resources</h2>

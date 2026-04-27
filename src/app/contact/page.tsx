@@ -5,17 +5,17 @@ import { MapPin, Phone, Mail, Send } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen pt-44 pb-24 relative overflow-hidden">
+    <div className="min-h-screen pt-24 md:pt-44 pb-12 md:pb-24 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-40 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
+            className="text-3xl md:text-6xl font-bold text-emerald-950 mb-4 md:mb-6"
           >
             Get in <span className="text-primary">Touch</span>
           </motion.h1>
@@ -23,7 +23,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-emerald-800 max-w-2xl mx-auto"
+            className="text-base md:text-xl text-emerald-800 max-w-2xl mx-auto"
           >
             Ready to secure your next investment? Our expert advisors are here to guide you through every step.
           </motion.p>
@@ -100,7 +100,7 @@ export default function ContactPage() {
             transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
             style={{ transformStyle: "preserve-3d", perspective: 1000 }}
           >
-            <div className="glass-card p-8 md:p-10 rounded-3xl h-full">
+            <div className="glass-card p-6 md:p-10 rounded-3xl h-full">
               <h3 className="text-2xl font-bold text-emerald-950 mb-6">Send us a Message</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

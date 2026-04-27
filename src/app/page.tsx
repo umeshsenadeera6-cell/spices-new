@@ -21,7 +21,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0, rotateX: 0, z: 0 }}
             transition={{ duration: 1, type: "spring", bounce: 0.4 }}
             style={{ perspective: 1000 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight"
           >
             Invest Smart. <br className="hidden md:block"/>
             <span className="text-gradient">Build Your Future</span> <br className="hidden md:block"/>
@@ -32,7 +32,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl text-white mb-10 max-w-2xl mx-auto"
+            className="text-base md:text-xl text-white mb-8 md:mb-10 max-w-2xl mx-auto px-2 md:px-0"
           >
             Premium property development, land sales, and exclusive real estate investment opportunities in Sri Lanka designed for maximum ROI.
           </motion.p>
@@ -46,52 +46,58 @@ export default function Home() {
           whileHover={{ y: -5, scale: 1.01, rotateX: 2 }}
           transition={{ duration: 0.8, delay: 0.6, type: "spring" }}
           style={{ perspective: 1000 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-5xl z-20"
+          className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-20"
         >
-          <div className="glass rounded-full p-2.5 flex flex-col md:flex-row gap-2.5">
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
-              <MapPin className="text-primary h-5 w-5 mr-3" />
-              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-emerald-950 w-full placeholder:text-emerald-600/80 font-medium" />
+          <div className="glass rounded-2xl md:rounded-full p-3 flex flex-col md:flex-row gap-2.5">
+            <div className="flex items-center bg-white rounded-xl md:rounded-full px-4 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm md:flex-1">
+              <MapPin className="text-primary h-5 w-5 mr-3 shrink-0" />
+              <input type="text" placeholder="Location (e.g. Colombo)" className="bg-transparent border-none outline-none text-emerald-950 w-full placeholder:text-emerald-600/80 font-medium text-sm" />
             </div>
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
-              <Building className="text-primary h-5 w-5 mr-3" />
-              <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
-                <option value="" className="text-emerald-700">Property Type</option>
-                <option value="land" className="text-emerald-950">Land</option>
-                <option value="house" className="text-emerald-950">House</option>
-                <option value="apartment" className="text-emerald-950">Apartment</option>
-              </select>
+            <div className="flex gap-2.5 md:contents">
+              <div className="flex-1 flex items-center bg-white rounded-xl md:rounded-full px-4 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm md:flex-1">
+                <Building className="text-primary h-5 w-5 mr-3 shrink-0" />
+                <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium text-sm">
+                  <option value="" className="text-emerald-700">Property Type</option>
+                  <option value="land" className="text-emerald-950">Land</option>
+                  <option value="house" className="text-emerald-950">House</option>
+                  <option value="apartment" className="text-emerald-950">Apartment</option>
+                </select>
+              </div>
+              <div className="flex-1 flex items-center bg-white rounded-xl md:rounded-full px-4 py-3 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm md:flex-1">
+                <span className="text-primary font-bold mr-3 text-sm">LKR</span>
+                <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium text-sm">
+                  <option value="" className="text-emerald-700">Price Range</option>
+                  <option value="0-50m" className="text-emerald-950">Under 50M</option>
+                  <option value="50m-100m" className="text-emerald-950">50M - 100M</option>
+                  <option value="100m+" className="text-emerald-950">100M+</option>
+                </select>
+              </div>
             </div>
-            <div className="flex-1 flex items-center bg-white rounded-full px-6 py-3.5 border border-gray-200 focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all shadow-sm">
-              <span className="text-primary font-bold mr-3">LKR</span>
-              <select className="bg-transparent border-none outline-none text-emerald-950 w-full appearance-none cursor-pointer font-medium">
-                <option value="" className="text-emerald-700">Price Range</option>
-                <option value="0-50m" className="text-emerald-950">Under 50M</option>
-                <option value="50m-100m" className="text-emerald-950">50M - 100M</option>
-                <option value="100m+" className="text-emerald-950">100M+</option>
-              </select>
-            </div>
-            <button className="bg-primary text-white w-[54px] h-[54px] flex items-center justify-center rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5">
-              <Search className="h-6 w-6" />
+            <button className="bg-primary text-white h-11 md:w-[54px] md:h-[54px] flex items-center justify-center rounded-xl md:rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/30 shrink-0 hover:-translate-y-0.5 gap-2 px-6 md:px-0">
+              <Search className="h-5 w-5" />
+              <span className="md:hidden font-semibold text-sm">Search Properties</span>
             </button>
           </div>
         </motion.div>
       </section>
 
       {/* Featured Properties */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-12 md:py-24 relative overflow-hidden">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
         
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-end mb-12">
+          <div className="flex justify-between items-end mb-8 md:mb-12">
             <div>
-              <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-2">Exclusive Portfolio</h2>
-              <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Featured Properties</h3>
+              <h2 className="text-xs md:text-sm text-primary font-bold tracking-widest uppercase mb-2">Exclusive Portfolio</h2>
+              <h3 className="text-2xl md:text-5xl font-bold text-emerald-950">Featured Properties</h3>
             </div>
             <Link href="/properties" className="hidden md:flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors">
               View All <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+          <Link href="/properties" className="md:hidden inline-flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors text-sm mb-6">
+            View All Properties <ArrowRight className="h-4 w-4" />
+          </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProperties.map((property, idx) => (
@@ -148,11 +154,11 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
+      <section className="py-12 md:py-24 bg-gray-50 border-y border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-2">The Serendib Advantage</h2>
-            <h3 className="text-3xl md:text-5xl font-bold text-emerald-950">Why Choose Us</h3>
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-xs md:text-sm text-primary font-bold tracking-widest uppercase mb-2">The Serendib Advantage</h2>
+            <h3 className="text-2xl md:text-5xl font-bold text-emerald-950">Why Choose Us</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -163,7 +169,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, type: "spring" }}
               style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-              className="glass-card p-10 text-center"
+              className="glass-card p-6 md:p-10 text-center"
             >
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <Shield className="h-10 w-10 text-primary" />
@@ -179,7 +185,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.2, type: "spring" }}
               style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-              className="glass-card p-10 text-center relative overflow-hidden"
+              className="glass-card p-6 md:p-10 text-center relative overflow-hidden"
             >
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <TrendingUp className="h-10 w-10 text-primary" />
@@ -208,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-12 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80" 
@@ -223,10 +229,10 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto glass p-12 rounded-3xl border border-primary/20"
+            className="max-w-3xl mx-auto glass p-6 sm:p-10 md:p-12 rounded-3xl border border-primary/20"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Build Your Portfolio?</h2>
-            <p className="text-white mb-8 text-lg">
+            <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-6">Ready to Build Your Portfolio?</h2>
+            <p className="text-white mb-6 md:mb-8 text-base md:text-lg">
               Speak with our investment advisors to discover exclusive opportunities tailored to your financial goals.
             </p>
             <Link href="/contact" className="btn-primary mx-auto inline-flex">

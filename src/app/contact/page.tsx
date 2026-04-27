@@ -12,14 +12,14 @@ export default function ContactPage() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold text-emerald-950 mb-6"
           >
             Get in <span className="text-primary">Touch</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -31,7 +31,7 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50, rotateY: 15 }}
             animate={{ opacity: 1, x: 0, rotateY: 0 }}
             transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
@@ -48,9 +48,9 @@ export default function ContactPage() {
                   <div>
                     <h4 className="text-emerald-950 font-semibold mb-1">Head Office</h4>
                     <p className="text-emerald-800 leading-relaxed">
-                      Level 35, World Trade Center,<br/>
-                      Echelon Square, Colombo 01,<br/>
-                      Sri Lanka
+                      No 87,Pannipitiya Road<br />
+                      Battaramulla,<br />
+                      Sri Lanka.
                     </p>
                   </div>
                 </div>
@@ -61,8 +61,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-emerald-950 font-semibold mb-1">Phone</h4>
-                    <p className="text-emerald-800">Main: +94 11 234 5678</p>
-                    <p className="text-emerald-800">Sales: +94 77 123 4567</p>
+                    <p className="text-emerald-800">Main: +94 74 411 0414</p>
+                    <p className="text-emerald-800">Sales: +94 74 411 0414</p>
                   </div>
                 </div>
 
@@ -86,16 +86,16 @@ export default function ContactPage() {
                 <p className="text-emerald-950 font-semibold">Google Maps Integration</p>
                 <p className="text-sm text-emerald-800">Requires API Key</p>
               </div>
-              <img 
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80" 
-                alt="Map Background" 
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"
+                alt="Map Background"
                 className="w-full h-full object-cover opacity-30 blur-sm"
               />
             </div>
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50, rotateY: -15 }}
             animate={{ opacity: 1, x: 0, rotateY: 0 }}
             transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
@@ -107,16 +107,16 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-emerald-800 mb-2">First Name</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                       placeholder="John"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-emerald-800 mb-2">Last Name</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                       placeholder="Doe"
                     />
@@ -125,8 +125,8 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-sm font-medium text-emerald-800 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
                     placeholder="john@example.com"
                   />
@@ -145,15 +145,15 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-sm font-medium text-emerald-800 mb-2">Message</label>
-                  <textarea 
+                  <textarea
                     rows={5}
                     className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors resize-none"
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
 
-                <button 
-                  type="button" 
+                <button
+                  type="button"
                   className="w-full py-4 bg-primary text-emerald-950 font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30 flex items-center justify-center gap-2"
                 >
                   Send Message <Send className="h-4 w-4" />

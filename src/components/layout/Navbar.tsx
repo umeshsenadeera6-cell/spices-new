@@ -40,9 +40,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Serendib Investment & Developers"
-            width={220}
-            height={80}
-            className="h-20 w-auto object-contain"
+            width={320}
+            height={120}
+            className="h-28 w-auto object-contain"
             priority
           />
         </Link>

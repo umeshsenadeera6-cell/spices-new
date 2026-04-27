@@ -61,15 +61,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-emerald-800">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>Level 35, World Trade Center, Colombo 01, Sri Lanka</span>
+                <span>\No 87,Pannipitiya Road ,Battaramulla, Sri Lanka</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-emerald-800">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+94 11 234 5678</span>
+                <span>+94 74 411 0414</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-emerald-800">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>invest@serendib.lk</span>
+                <span>investment@serendibgroups.com</span>
               </li>
             </ul>
           </div>

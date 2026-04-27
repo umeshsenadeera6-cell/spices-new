@@ -72,8 +72,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-emerald-950 font-semibold mb-1">Email</h4>
-                    <p className="text-emerald-800">invest@serendib.lk</p>
-                    <p className="text-emerald-800">support@serendib.lk</p>
+                    <p className="text-emerald-800">investment@serendibgroups.com</p>
                   </div>
                 </div>
               </div>

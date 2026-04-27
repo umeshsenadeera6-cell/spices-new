@@ -89,8 +89,8 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {[
-            { name: "Shameen Chandrasekare", role: "Sales & Marketing Director", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" },
-            { name: "Nivantha Perera", role: "Manager - Investment & Developers", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" },
+            { name: "Shameen Chandrasekare", role: "Sales & Marketing Director", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" },
+            { name: "Nivantha Perera", role: "Manager - Investment & Developers", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" },
 
           ].map((member, idx) => (
             <motion.div

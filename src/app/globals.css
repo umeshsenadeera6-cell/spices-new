@@ -33,7 +33,7 @@ body {
   }
   
   .glass-nav {
-    @apply bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-sm transition-all duration-300;
+    @apply bg-white/80 backdrop-blur-xl shadow-sm transition-all duration-300;
   }
 
   .text-gradient {

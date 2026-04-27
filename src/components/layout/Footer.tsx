@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Building2 className="text-primary h-8 w-8" />
               <span className="text-xl font-bold tracking-wider text-emerald-950">
-                SERENDIB
+                SERENDIB INVESTMENT & DEVELOPERS
               </span>
             </Link>
             <p className="text-emerald-800 text-sm leading-relaxed">

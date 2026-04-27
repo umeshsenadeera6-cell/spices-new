@@ -19,7 +19,7 @@ export default function PropertiesPage() {
   });
 
   return (
-    <div className="min-h-screen pt-32 pb-24">
+    <div className="min-h-screen pt-44 pb-24">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12">

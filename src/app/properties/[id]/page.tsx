@@ -26,7 +26,7 @@ export default function PropertyDetails({
   const prevImage = () => setActiveImage((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="min-h-screen pt-32 pb-24">
+    <div className="min-h-screen pt-44 pb-24">
       <div className="container mx-auto px-4">
         <Link href="/properties" className="inline-flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors mb-8 group">
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" /> Back to Properties
@@ -166,7 +166,7 @@ export default function PropertyDetails({
           {/* Sidebar */}
           <div className="space-y-8">
             {/* Contact Card */}
-            <div className="glass-card p-8 sticky top-32">
+            <div className="glass-card p-8 sticky top-44">
               <h3 className="text-xl font-bold text-emerald-950 mb-6">Interested in this property?</h3>
               <form className="space-y-4 mb-8">
                 <div>

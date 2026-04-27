@@ -5,7 +5,7 @@ import { TrendingUp, PieChart, Download, DollarSign, Globe, ShieldCheck } from "
 
 export default function InvestorPage() {
   return (
-    <div className="min-h-screen pt-32 pb-24">
+    <div className="min-h-screen pt-44 pb-24">
       {/* Header */}
       <section className="container mx-auto px-4 mb-20 text-center">
         <motion.h1 

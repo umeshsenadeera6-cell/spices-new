@@ -5,7 +5,7 @@ import { Building2, Target, Eye, Users } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen pt-32 pb-24">
+    <div className="min-h-screen pt-44 pb-24">
       {/* Hero Section */}
       <section className="container mx-auto px-4 mb-24">
         <div className="text-center max-w-4xl mx-auto">

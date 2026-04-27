@@ -16,7 +16,7 @@ export default function AboutPage() {
           >
             <Building2 className="h-10 w-10 text-primary" />
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -24,7 +24,7 @@ export default function AboutPage() {
           >
             Shaping the Future of <span className="text-primary">Sri Lankan Real Estate</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -40,7 +40,7 @@ export default function AboutPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50, rotateY: 15 }}
               whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
               whileHover={{ scale: 1.02, rotateY: 5, z: 20 }}
@@ -57,7 +57,7 @@ export default function AboutPage() {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50, rotateY: -15 }}
               whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
               whileHover={{ scale: 1.02, rotateY: -5, z: 20 }}
@@ -89,11 +89,11 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { name: "Arjuna Silva", role: "Chief Executive Officer", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" },
-            { name: "Nimali Perera", role: "Head of Investments", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" },
-            { name: "Rajitha Fernando", role: "Chief Architect", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" }
+            { name: "Shameen Chandrasekare", role: "Sales & Marketing Director", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" },
+            { name: "Nivantha Perera", role: "Manager - Investment & Developers", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" },
+
           ].map((member, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, y: 50, rotateX: 15, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
@@ -104,8 +104,8 @@ export default function AboutPage() {
               className="glass-card overflow-hidden text-center group"
             >
               <div className="h-80 overflow-hidden">
-                <img 
-                  src={member.image} 
+                <img
+                  src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
                 />

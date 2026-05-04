@@ -26,7 +26,7 @@ export default function PropertyDetails({
   const prevImage = () => setActiveImage((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="min-h-screen pt-44 pb-24">
+    <div className="min-h-screen pt-24 md:pt-44 pb-12 md:pb-24">
       <div className="container mx-auto px-4">
         <Link href="/properties" className="inline-flex items-center gap-2 text-emerald-800 hover:text-primary transition-colors mb-8 group">
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" /> Back to Properties
@@ -37,7 +37,7 @@ export default function PropertyDetails({
           <div className="lg:col-span-2 space-y-8">
             {/* Gallery */}
             <div className="space-y-4">
-              <div className="relative h-[60vh] rounded-3xl overflow-hidden glass shadow-2xl group">
+              <div className="relative h-[40vh] md:h-[60vh] rounded-3xl overflow-hidden glass shadow-2xl group">
                 <AnimatePresence mode="wait">
                   <motion.img 
                     key={activeImage}
@@ -59,13 +59,13 @@ export default function PropertyDetails({
                   <>
                     <button 
                       onClick={prevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/40"
+                      className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-white/40"
                     >
                       <ChevronLeft className="h-6 w-6" />
                     </button>
                     <button 
                       onClick={nextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/40"
+                      className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-white/40"
                     >
                       <ChevronRight className="h-6 w-6" />
                     </button>
@@ -97,7 +97,7 @@ export default function PropertyDetails({
             <div>
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h1 className="text-3xl md:text-5xl font-bold text-emerald-950 mb-2">{property.title}</h1>
+                  <h1 className="text-2xl md:text-5xl font-bold text-emerald-950 mb-2">{property.title}</h1>
                   <p className="text-emerald-800 flex items-center gap-2 text-lg">
                     <MapPin className="h-5 w-5 text-primary" /> {property.location}
                   </p>
@@ -166,7 +166,7 @@ export default function PropertyDetails({
           {/* Sidebar */}
           <div className="space-y-8">
             {/* Contact Card */}
-            <div className="glass-card p-8 sticky top-44">
+            <div className="glass-card p-6 md:p-8 sticky top-24 md:top-44">
               <h3 className="text-xl font-bold text-emerald-950 mb-6">Interested in this property?</h3>
               <form className="space-y-4 mb-8">
                 <div>

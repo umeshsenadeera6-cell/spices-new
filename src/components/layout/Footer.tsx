@@ -3,20 +3,21 @@ import { Building2, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 pt-20 pb-10 mt-24 relative overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.02)]">
+    <footer className="bg-white border-t border-gray-100 pt-12 md:pt-20 pb-10 mt-16 md:mt-24 relative overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.02)]">
       {/* Decorative gradient blur */}
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-12">
           {/* Brand Col */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Building2 className="text-primary h-8 w-8" />
-              <span className="text-xl font-bold tracking-wider text-emerald-950">
-                SERENDIB INVESTMENT & DEVELOPERS
-              </span>
+              <Building2 className="text-primary h-7 w-7 shrink-0" />
+              <div>
+                <p className="text-base font-bold leading-tight text-emerald-950">Serendib Investment</p>
+                <p className="text-sm font-medium text-emerald-700">& Developers</p>
+              </div>
             </Link>
             <p className="text-emerald-800 text-sm leading-relaxed">
               Premium property development, land sales, and real estate investment opportunities across Sri Lanka. Invest smart and build your future.

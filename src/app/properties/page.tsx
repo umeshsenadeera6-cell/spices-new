@@ -19,14 +19,14 @@ export default function PropertiesPage() {
   });
 
   return (
-    <div className="min-h-screen pt-44 pb-24">
+    <div className="min-h-screen pt-24 md:pt-44 pb-12 md:pb-24">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold text-emerald-950 mb-4"
+            className="text-3xl md:text-5xl font-bold text-emerald-950 mb-4"
           >
             Explore <span className="text-primary">Properties</span>
           </motion.h1>
@@ -45,9 +45,9 @@ export default function PropertiesPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="glass p-4 rounded-2xl mb-12 flex flex-col lg:flex-row gap-4"
+          className="glass p-3 md:p-4 rounded-2xl mb-8 md:mb-12 flex flex-col gap-3"
         >
-          <div className="flex-1 relative">
+          <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-800 h-5 w-5" />
             <input 
               type="text" 
@@ -57,11 +57,11 @@ export default function PropertiesPage() {
               className="w-full bg-gray-100 border border-gray-200 rounded-xl py-3 pl-12 pr-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors"
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-3">
             <select 
               value={filterType}
               onChange={(e) => setFilterType(e.target.value)}
-              className="bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer"
+              className="flex-1 min-w-[130px] bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
             >
               <option value="" className="bg-white text-emerald-950">All Types</option>
               <option value="Villa" className="bg-white text-emerald-950">Villa</option>
@@ -72,7 +72,7 @@ export default function PropertiesPage() {
             <select 
               value={filterLocation}
               onChange={(e) => setFilterLocation(e.target.value)}
-              className="bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer"
+              className="flex-1 min-w-[130px] bg-gray-100 border border-gray-200 rounded-xl py-3 px-4 text-emerald-950 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
             >
               <option value="" className="bg-white text-emerald-950">All Locations</option>
               <option value="Colombo" className="bg-white text-emerald-950">Colombo</option>
@@ -80,7 +80,7 @@ export default function PropertiesPage() {
               <option value="Kandy" className="bg-white text-emerald-950">Kandy</option>
               <option value="Galle" className="bg-white text-emerald-950">Galle</option>
             </select>
-            <button className="bg-gray-200 p-3 rounded-xl hover:bg-gray-300 transition-colors flex items-center justify-center">
+            <button className="bg-gray-200 p-3 rounded-xl hover:bg-gray-300 transition-colors flex items-center justify-center shrink-0">
               <SlidersHorizontal className="h-5 w-5 text-emerald-950" />
             </button>
           </div>
